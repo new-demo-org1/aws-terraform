@@ -102,4 +102,3 @@ resource "aws_alb_listener" "3Tier_App_Load_Balancer_HTTP_Front_End" {
 }
 
 
-  
