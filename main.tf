@@ -1,8 +1,14 @@
-module "cloudflare-security-group" {
-  source  = "orzarchi/cloudflare-security-group/aws"
+module "registry" {
+  source  = "SwissArmyRonin/registry/aws"
   version = "1.0.5"
-  # insert the 1required variable here
+  # insert the 3 required variables here
 }
+
+# module "cloudflare-security-group" {
+#   source  = "orzarchi/cloudflare-security-group/aws"
+#   version = "1.0.5"
+#   # insert the 1required variable here
+# }
   
 resource "aws_cloudwatch_log_group" "flow_log" {
   allocated_storage           = "${var.3Tier_RDS_MySQL_Allocated_Storage}"
